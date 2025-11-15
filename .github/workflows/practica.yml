@@ -1,0 +1,13 @@
+name: Mi Primer Workflow
+
+on: [push]
+
+jobs:
+  mi-primer-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Paso 1 - Saludo
+        run: echo "¡Hola! El workflow funciona 🎉"
+      
+      - name: Paso 2 - Información
+        run: echo "Esto se ejecutó por: ${{ github.event_name }}"
