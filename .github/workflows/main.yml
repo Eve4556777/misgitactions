@@ -10,7 +10,7 @@ jobs:
         run: echo "El flujo de trabajo ha sido ejecutado en el evento: ${{ github.event_name }}"
       
       - name: Mostrar información del runner
-        run: echo "El trabajo se está ejecutado en un servidor ${{ runner.os }} hospedado en Github"
+        run: echo "El trabajo se está ejecutando en un servidor ${{ runner.os }} hospedado en Github"
       
       - name: Verificar el código del repositorio
         uses: actions/checkout@v3
